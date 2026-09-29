@@ -16,11 +16,8 @@ export const CustomBreadcrumb = ({ currentPage }: Props) => {
       <Breadcrumb aria-label="Breadcrumb">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink>
-              <Link to="/">Inicio</Link>
-            </BreadcrumbLink>
+            <BreadcrumbLink render={<Link to="/" />}>Inicio</BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbItem></BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbPage>{currentPage}</BreadcrumbPage>
